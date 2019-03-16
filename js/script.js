@@ -31,10 +31,10 @@ Identify the element id's added in the "index.html" file and use ".innerHTML" to
 */
 function  printQuote(){
   var newQuote = getRandomQuote(quotes);
-  var outputDiv = document.getElementById('quote');
-      outputDiv.innerHTML = newQuote[0];
-  var outputDiv = document.getElementById('output');
-      outputDiv.innerHTML = newQuote[1] + " " + newQuote[2] +" " + newQuote[3];
+  var outputDiv = document.getElementById('quoteBox');
+      outputDiv.innerHTML = `<p span class="quote">newQuote[0]</p>
+                              <p span class="source">newQuote[1] + " " + newQuote[2] +" " + newQuote[3]</p>`;
+
 }
 /*
 Use ".addEventListener" method from the "getElementById" method to run the "printQuote" function
