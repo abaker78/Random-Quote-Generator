@@ -30,7 +30,7 @@ Pull out the quote from the "return" list from the getRandomQuote function.
 Identify the element id's added in the "index.html" file and use ".innerHTML" to wite to those elements.
 */
 function  printQuote(){
-  newQuote = getRandomQuote(quotes);
+  var newQuote = getRandomQuote(quotes);
   var outputDiv = document.getElementById('quote');
       outputDiv.innerHTML = newQuote[0];
   var outputDiv = document.getElementById('output');
