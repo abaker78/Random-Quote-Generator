@@ -4,7 +4,7 @@ project 1 - A Random Quote Generator
 ******************************************/
 // Create a list containing 5 quotes, one with citation and years
 
-var quotes =[{Quote: "Good order is the foundation of all things.", Source: "Edmund Burke,", Citation: "Reflections on the Revolution in France,", Year: "1790"},
+var quotes =[{Quote: "Good order is the foundation of all things.", Source: "Edmund Burke", Citation: "Reflections on the Revolution in France", Year: "1790"},
             {Quote:"There are two great days in a person's life - the day we are born and the day we discover why.", Source: "William Barclay", Citation:"", Year:""},
             {Quote:"Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do.", Source:"Mark Twain", Citation:"", Year:""},
             {Quote:"Those who dare to fail miserably can achieve greatly.", Source:"John F. Kennedy", Citation:"", Year:""},
@@ -31,10 +31,9 @@ Identify the element id's added in the "index.html" file and use ".innerHTML" to
 */
 function  printQuote(){
   var newQuote = getRandomQuote(quotes);
-  var outputDiv = document.getElementById('quoteBox');
-      outputDiv.innerHTML = `<p span class="quote">newQuote[0]</p>
-                              <p span class="source">newQuote[1] + " " + newQuote[2] +" " + newQuote[3]</p>`;
-
+  var outputDiv = document.getElementById('quote');
+      outputDiv.innerHTML = `<span class="quote">${newQuote[0]}</span>
+                             <p span class="source">${newQuote[1]}, ${newQuote[2]} ${newQuote[3]}</span></p>`;
 }
 /*
 Use ".addEventListener" method from the "getElementById" method to run the "printQuote" function
